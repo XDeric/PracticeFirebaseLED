@@ -16,6 +16,7 @@
 		8580492024C9EA92008CDD7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8580491E24C9EA92008CDD7C /* LaunchScreen.storyboard */; };
 		8580492B24C9EA92008CDD7C /* FirebaseLEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580492A24C9EA92008CDD7C /* FirebaseLEDTests.swift */; };
 		8580493624C9ECCE008CDD7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8580493524C9ECCE008CDD7C /* GoogleService-Info.plist */; };
+		8580493824C9F23B008CDD7C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580493724C9F23B008CDD7C /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8580492A24C9EA92008CDD7C /* FirebaseLEDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLEDTests.swift; sourceTree = "<group>"; };
 		8580492C24C9EA92008CDD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8580493524C9ECCE008CDD7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8580493724C9F23B008CDD7C /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				8580491024C9EA8A008CDD7C /* AppDelegate.swift */,
+				8580493724C9F23B008CDD7C /* Secrets.swift */,
 				8580491224C9EA8A008CDD7C /* SceneDelegate.swift */,
 				8580491424C9EA8A008CDD7C /* ViewController.swift */,
 				8580491624C9EA8A008CDD7C /* Main.storyboard */,
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8580491524C9EA8A008CDD7C /* ViewController.swift in Sources */,
+				8580493824C9F23B008CDD7C /* Secrets.swift in Sources */,
 				8580491124C9EA8A008CDD7C /* AppDelegate.swift in Sources */,
 				8580491B24C9EA8A008CDD7C /* FirebaseLED.xcdatamodeld in Sources */,
 				8580491324C9EA8A008CDD7C /* SceneDelegate.swift in Sources */,
