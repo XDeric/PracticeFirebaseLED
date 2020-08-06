@@ -7,3 +7,28 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
+enum FirebaseError {
+    case error
+    case noChange
+    case snapshotError
+    
+}
+
+class FirebaseService {
+    static let manager = FirebaseService()
+    
+    private let db = Firestore.firestore()
+    
+    
+    func sendStatus(status: Status){
+//        db.collection("Status").document("test").setData()
+        
+    }
+    
+    func recieveStatus(){
+        
+        
+    }
+}
