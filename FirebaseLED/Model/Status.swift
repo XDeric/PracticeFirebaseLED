@@ -11,7 +11,7 @@ import Foundation
 struct Status: FirebaseConvertible {
     let id: UUID
     let status: String
-    let statusNum: Int
+    let statusNum: Bool
 }
 
 protocol FirebaseConvertible: Codable {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		8580492B24C9EA92008CDD7C /* FirebaseLEDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580492A24C9EA92008CDD7C /* FirebaseLEDTests.swift */; };
 		8580493824C9F23B008CDD7C /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580493724C9F23B008CDD7C /* Secrets.swift */; };
 		8580493C24DBC0ED008CDD7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8580493B24DBC0ED008CDD7C /* GoogleService-Info.plist */; };
+		8580493F24DBC5DD008CDD7C /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580493E24DBC5DD008CDD7C /* FirebaseService.swift */; };
+		8580494124DBCAFB008CDD7C /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580494024DBCAFB008CDD7C /* Status.swift */; };
+		85A9A8C024DC423400419402 /* FirebaseDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A9A8BF24DC423400419402 /* FirebaseDatabaseService.swift */; };
 		AFEBF7BE2960C74906E91A3F /* Pods_FirebaseLED.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC83EB6FC5169365BCFEB41 /* Pods_FirebaseLED.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +51,11 @@
 		8580492624C9EA92008CDD7C /* FirebaseLEDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseLEDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8580492A24C9EA92008CDD7C /* FirebaseLEDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLEDTests.swift; sourceTree = "<group>"; };
 		8580492C24C9EA92008CDD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8580493724C9F23B008CDD7C /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		8580493724C9F23B008CDD7C /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Secrets.swift; path = ../Secrets.swift; sourceTree = "<group>"; };
 		8580493B24DBC0ED008CDD7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8580493E24DBC5DD008CDD7C /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		8580494024DBCAFB008CDD7C /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		85A9A8BF24DC423400419402 /* FirebaseDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseService.swift; sourceTree = "<group>"; };
 		8DFCA57D5207F00F9F983817 /* Pods-FirebaseLEDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLEDTests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseLEDTests/Pods-FirebaseLEDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCFB2BE244C2965EDA5D2A97 /* Pods_FirebaseLEDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLEDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,8 +88,20 @@
 				8DFCA57D5207F00F9F983817 /* Pods-FirebaseLEDTests.debug.xcconfig */,
 				31D43AE298B035279832F4D9 /* Pods-FirebaseLEDTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8548DA9E24DC662400B88841 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8580493724C9F23B008CDD7C /* Secrets.swift */,
+				8580491024C9EA8A008CDD7C /* AppDelegate.swift */,
+				8580491224C9EA8A008CDD7C /* SceneDelegate.swift */,
+				8580491624C9EA8A008CDD7C /* Main.storyboard */,
+				8580491C24C9EA92008CDD7C /* Assets.xcassets */,
+				8580491E24C9EA92008CDD7C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8580490424C9EA8A008CDD7C = {
@@ -109,16 +127,13 @@
 		8580490F24C9EA8A008CDD7C /* FirebaseLED */ = {
 			isa = PBXGroup;
 			children = (
-				8580491024C9EA8A008CDD7C /* AppDelegate.swift */,
-				8580493724C9F23B008CDD7C /* Secrets.swift */,
-				8580491224C9EA8A008CDD7C /* SceneDelegate.swift */,
+				8580494224DBCB02008CDD7C /* Model */,
+				8580493D24DBC5CC008CDD7C /* FirebaseManager */,
 				8580491424C9EA8A008CDD7C /* ViewController.swift */,
-				8580491624C9EA8A008CDD7C /* Main.storyboard */,
-				8580491C24C9EA92008CDD7C /* Assets.xcassets */,
-				8580491E24C9EA92008CDD7C /* LaunchScreen.storyboard */,
 				8580492124C9EA92008CDD7C /* Info.plist */,
 				8580493B24DBC0ED008CDD7C /* GoogleService-Info.plist */,
 				8580491924C9EA8A008CDD7C /* FirebaseLED.xcdatamodeld */,
+				8548DA9E24DC662400B88841 /* Supporting Files */,
 			);
 			path = FirebaseLED;
 			sourceTree = "<group>";
@@ -130,6 +145,23 @@
 				8580492C24C9EA92008CDD7C /* Info.plist */,
 			);
 			path = FirebaseLEDTests;
+			sourceTree = "<group>";
+		};
+		8580493D24DBC5CC008CDD7C /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				8580493E24DBC5DD008CDD7C /* FirebaseService.swift */,
+				85A9A8BF24DC423400419402 /* FirebaseDatabaseService.swift */,
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		8580494224DBCB02008CDD7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8580494024DBCAFB008CDD7C /* Status.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DA643A9A625CC0662F26BAAC /* Frameworks */ = {
@@ -312,9 +344,12 @@
 			files = (
 				8580491524C9EA8A008CDD7C /* ViewController.swift in Sources */,
 				8580493824C9F23B008CDD7C /* Secrets.swift in Sources */,
+				8580494124DBCAFB008CDD7C /* Status.swift in Sources */,
 				8580491124C9EA8A008CDD7C /* AppDelegate.swift in Sources */,
 				8580491B24C9EA8A008CDD7C /* FirebaseLED.xcdatamodeld in Sources */,
+				8580493F24DBC5DD008CDD7C /* FirebaseService.swift in Sources */,
 				8580491324C9EA8A008CDD7C /* SceneDelegate.swift in Sources */,
+				85A9A8C024DC423400419402 /* FirebaseDatabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

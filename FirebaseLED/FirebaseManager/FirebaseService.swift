@@ -23,12 +23,10 @@ class FirebaseService {
     
     
     func sendStatus(status: Status){
-//        db.collection("Status").document("test").setData()
-        
+        db.collection("Status").document(status.id.uuidString).setData(status.fieldsDict())
     }
     
     func recieveStatus(){
-        
         
     }
 }

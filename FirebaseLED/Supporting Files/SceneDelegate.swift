@@ -22,6 +22,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
+        /*
+         let masterTabBarConroller = UITabBarController()         masterTabBarConroller.viewControllers = [RadioStationsViewController(), PodcastsViewController()] //        radioVC = MediaPlayingViewController() //        radioVC?.player = player         window?.rootViewController = masterTabBarConroller
+         */
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

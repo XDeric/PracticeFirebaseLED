@@ -9,6 +9,7 @@ target 'FirebaseLED' do
 
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'Firebase/Database'
 
   target 'FirebaseLEDTests' do
     inherit! :search_paths
