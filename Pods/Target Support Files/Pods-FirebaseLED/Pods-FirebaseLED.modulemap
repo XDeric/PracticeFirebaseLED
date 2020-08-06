@@ -1,0 +1,6 @@
+framework module Pods_FirebaseLED {
+  umbrella header "Pods-FirebaseLED-umbrella.h"
+
+  export *
+  module * { export * }
+}
