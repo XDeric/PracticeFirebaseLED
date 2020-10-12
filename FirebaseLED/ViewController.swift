@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         return btn
     }()
     
+    /// changes title on button and then sends int to firebase RTDB
     @objc func onOrOff(){
-        
         //this listens to status in RTDB and the data is ANY
 //        re.observe(.value) { (snap: DataSnapshot) in
 //            //print(snap.value!)
