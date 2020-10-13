@@ -39,6 +39,7 @@
 		0F56088436FBF0EDDF73C489 /* Pods-FirebaseLED.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLED.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLED/Pods-FirebaseLED.release.xcconfig"; sourceTree = "<group>"; };
 		31D43AE298B035279832F4D9 /* Pods-FirebaseLEDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLEDTests.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLEDTests/Pods-FirebaseLEDTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CC83EB6FC5169365BCFEB41 /* Pods_FirebaseLED.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLED.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		857150C62535FC8300C2B128 /* FirebaseLED.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseLED.entitlements; sourceTree = "<group>"; };
 		8580490D24C9EA8A008CDD7C /* FirebaseLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLED.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8580491024C9EA8A008CDD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8580491224C9EA8A008CDD7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 		8580490F24C9EA8A008CDD7C /* FirebaseLED */ = {
 			isa = PBXGroup;
 			children = (
+				857150C62535FC8300C2B128 /* FirebaseLED.entitlements */,
 				8580494224DBCB02008CDD7C /* Model */,
 				8580493D24DBC5CC008CDD7C /* FirebaseManager */,
 				8580491424C9EA8A008CDD7C /* ViewController.swift */,
@@ -510,7 +512,9 @@
 			baseConfigurationReference = 05912F95954092F0C8122C82 /* Pods-FirebaseLED.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseLED/FirebaseLED.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
 				INFOPLIST_FILE = FirebaseLED/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,7 +532,9 @@
 			baseConfigurationReference = 0F56088436FBF0EDDF73C489 /* Pods-FirebaseLED.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseLED/FirebaseLED.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
 				INFOPLIST_FILE = FirebaseLED/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
