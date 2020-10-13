@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7C826ADF7D26BDCEA99B5EB1 /* Pods_FirebaseLEDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFB2BE244C2965EDA5D2A97 /* Pods_FirebaseLEDTests.framework */; };
+		857150D025360A1F00C2B128 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857150CF25360A1F00C2B128 /* IntentHandler.swift */; };
+		857150D825360A1F00C2B128 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857150D725360A1F00C2B128 /* IntentsUI.framework */; };
+		857150DB25360A1F00C2B128 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857150DA25360A1F00C2B128 /* IntentViewController.swift */; };
+		857150DE25360A1F00C2B128 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857150DC25360A1F00C2B128 /* MainInterface.storyboard */; };
+		857150E225360A1F00C2B128 /* LightIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 857150D625360A1F00C2B128 /* LightIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		857150E525360A1F00C2B128 /* LightIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 857150CD25360A1F00C2B128 /* LightIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		857150F025360ACB00C2B128 /* IntentDef.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */; };
+		857150F125360CC900C2B128 /* IntentDef.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */; };
+		857150F225360CC900C2B128 /* IntentDef.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */; };
 		8580491124C9EA8A008CDD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491024C9EA8A008CDD7C /* AppDelegate.swift */; };
 		8580491324C9EA8A008CDD7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491224C9EA8A008CDD7C /* SceneDelegate.swift */; };
 		8580491524C9EA8A008CDD7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491424C9EA8A008CDD7C /* ViewController.swift */; };
@@ -25,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		857150E025360A1F00C2B128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8580490524C9EA8A008CDD7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 857150D525360A1F00C2B128;
+			remoteInfo = LightIntentUI;
+		};
+		857150E325360A1F00C2B128 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8580490524C9EA8A008CDD7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 857150CC25360A1F00C2B128;
+			remoteInfo = LightIntent;
+		};
 		8580492724C9EA92008CDD7C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8580490524C9EA8A008CDD7C /* Project object */;
@@ -34,12 +57,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		857150EC25360A1F00C2B128 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				857150E225360A1F00C2B128 /* LightIntentUI.appex in Embed App Extensions */,
+				857150E525360A1F00C2B128 /* LightIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		05912F95954092F0C8122C82 /* Pods-FirebaseLED.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLED.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseLED/Pods-FirebaseLED.debug.xcconfig"; sourceTree = "<group>"; };
 		0F56088436FBF0EDDF73C489 /* Pods-FirebaseLED.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLED.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLED/Pods-FirebaseLED.release.xcconfig"; sourceTree = "<group>"; };
 		31D43AE298B035279832F4D9 /* Pods-FirebaseLEDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseLEDTests.release.xcconfig"; path = "Target Support Files/Pods-FirebaseLEDTests/Pods-FirebaseLEDTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CC83EB6FC5169365BCFEB41 /* Pods_FirebaseLED.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseLED.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		857150C62535FC8300C2B128 /* FirebaseLED.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseLED.entitlements; sourceTree = "<group>"; };
+		857150CD25360A1F00C2B128 /* LightIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LightIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		857150CF25360A1F00C2B128 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		857150D125360A1F00C2B128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857150D625360A1F00C2B128 /* LightIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LightIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		857150D725360A1F00C2B128 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		857150DA25360A1F00C2B128 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		857150DD25360A1F00C2B128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		857150DF25360A1F00C2B128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IntentDef.intentdefinition; sourceTree = "<group>"; };
 		8580490D24C9EA8A008CDD7C /* FirebaseLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLED.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8580491024C9EA8A008CDD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8580491224C9EA8A008CDD7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +109,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		857150CA25360A1F00C2B128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857150D325360A1F00C2B128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857150D825360A1F00C2B128 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8580490A24C9EA8A008CDD7C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,11 +167,32 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		857150CE25360A1F00C2B128 /* LightIntent */ = {
+			isa = PBXGroup;
+			children = (
+				857150CF25360A1F00C2B128 /* IntentHandler.swift */,
+				857150D125360A1F00C2B128 /* Info.plist */,
+			);
+			path = LightIntent;
+			sourceTree = "<group>";
+		};
+		857150D925360A1F00C2B128 /* LightIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				857150DA25360A1F00C2B128 /* IntentViewController.swift */,
+				857150DC25360A1F00C2B128 /* MainInterface.storyboard */,
+				857150DF25360A1F00C2B128 /* Info.plist */,
+			);
+			path = LightIntentUI;
+			sourceTree = "<group>";
+		};
 		8580490424C9EA8A008CDD7C = {
 			isa = PBXGroup;
 			children = (
 				8580490F24C9EA8A008CDD7C /* FirebaseLED */,
 				8580492924C9EA92008CDD7C /* FirebaseLEDTests */,
+				857150CE25360A1F00C2B128 /* LightIntent */,
+				857150D925360A1F00C2B128 /* LightIntentUI */,
 				8580490E24C9EA8A008CDD7C /* Products */,
 				2F2EB49F262EC967B22D8368 /* Pods */,
 				DA643A9A625CC0662F26BAAC /* Frameworks */,
@@ -121,6 +204,8 @@
 			children = (
 				8580490D24C9EA8A008CDD7C /* FirebaseLED.app */,
 				8580492624C9EA92008CDD7C /* FirebaseLEDTests.xctest */,
+				857150CD25360A1F00C2B128 /* LightIntent.appex */,
+				857150D625360A1F00C2B128 /* LightIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				8580494024DBCAFB008CDD7C /* Status.swift */,
+				857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +257,7 @@
 			children = (
 				7CC83EB6FC5169365BCFEB41 /* Pods_FirebaseLED.framework */,
 				BCFB2BE244C2965EDA5D2A97 /* Pods_FirebaseLEDTests.framework */,
+				857150D725360A1F00C2B128 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,6 +265,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		857150CC25360A1F00C2B128 /* LightIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 857150E925360A1F00C2B128 /* Build configuration list for PBXNativeTarget "LightIntent" */;
+			buildPhases = (
+				857150C925360A1F00C2B128 /* Sources */,
+				857150CA25360A1F00C2B128 /* Frameworks */,
+				857150CB25360A1F00C2B128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightIntent;
+			productName = LightIntent;
+			productReference = 857150CD25360A1F00C2B128 /* LightIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		857150D525360A1F00C2B128 /* LightIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 857150E625360A1F00C2B128 /* Build configuration list for PBXNativeTarget "LightIntentUI" */;
+			buildPhases = (
+				857150D225360A1F00C2B128 /* Sources */,
+				857150D325360A1F00C2B128 /* Frameworks */,
+				857150D425360A1F00C2B128 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightIntentUI;
+			productName = LightIntentUI;
+			productReference = 857150D625360A1F00C2B128 /* LightIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8580490C24C9EA8A008CDD7C /* FirebaseLED */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8580492F24C9EA92008CDD7C /* Build configuration list for PBXNativeTarget "FirebaseLED" */;
@@ -187,10 +308,13 @@
 				8580490A24C9EA8A008CDD7C /* Frameworks */,
 				8580490B24C9EA8A008CDD7C /* Resources */,
 				FC7B355BAAADFEA9F90C606E /* [CP] Embed Pods Frameworks */,
+				857150EC25360A1F00C2B128 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				857150E125360A1F00C2B128 /* PBXTargetDependency */,
+				857150E425360A1F00C2B128 /* PBXTargetDependency */,
 			);
 			name = FirebaseLED;
 			productName = FirebaseLED;
@@ -226,6 +350,12 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = EricM;
 				TargetAttributes = {
+					857150CC25360A1F00C2B128 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					857150D525360A1F00C2B128 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					8580490C24C9EA8A008CDD7C = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -250,11 +380,28 @@
 			targets = (
 				8580490C24C9EA8A008CDD7C /* FirebaseLED */,
 				8580492524C9EA92008CDD7C /* FirebaseLEDTests */,
+				857150CC25360A1F00C2B128 /* LightIntent */,
+				857150D525360A1F00C2B128 /* LightIntentUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		857150CB25360A1F00C2B128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857150D425360A1F00C2B128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857150DE25360A1F00C2B128 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8580490B24C9EA8A008CDD7C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +487,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		857150C925360A1F00C2B128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857150F125360CC900C2B128 /* IntentDef.intentdefinition in Sources */,
+				857150D025360A1F00C2B128 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857150D225360A1F00C2B128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				857150F225360CC900C2B128 /* IntentDef.intentdefinition in Sources */,
+				857150DB25360A1F00C2B128 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8580490924C9EA8A008CDD7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +513,7 @@
 				8580493824C9F23B008CDD7C /* Secrets.swift in Sources */,
 				8580494124DBCAFB008CDD7C /* Status.swift in Sources */,
 				8580491124C9EA8A008CDD7C /* AppDelegate.swift in Sources */,
+				857150F025360ACB00C2B128 /* IntentDef.intentdefinition in Sources */,
 				8580491B24C9EA8A008CDD7C /* FirebaseLED.xcdatamodeld in Sources */,
 				8580493F24DBC5DD008CDD7C /* FirebaseService.swift in Sources */,
 				8580491324C9EA8A008CDD7C /* SceneDelegate.swift in Sources */,
@@ -366,6 +532,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		857150E125360A1F00C2B128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 857150D525360A1F00C2B128 /* LightIntentUI */;
+			targetProxy = 857150E025360A1F00C2B128 /* PBXContainerItemProxy */;
+		};
+		857150E425360A1F00C2B128 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 857150CC25360A1F00C2B128 /* LightIntent */;
+			targetProxy = 857150E325360A1F00C2B128 /* PBXContainerItemProxy */;
+		};
 		8580492824C9EA92008CDD7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8580490C24C9EA8A008CDD7C /* FirebaseLED */;
@@ -374,6 +550,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		857150DC25360A1F00C2B128 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				857150DD25360A1F00C2B128 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		8580491624C9EA8A008CDD7C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -393,6 +577,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		857150E725360A1F00C2B128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = LightIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.FirebaseLED.LightIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		857150E825360A1F00C2B128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = LightIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.FirebaseLED.LightIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		857150EA25360A1F00C2B128 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = LightIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.FirebaseLED.LightIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		857150EB25360A1F00C2B128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26RHXP32FH;
+				INFOPLIST_FILE = LightIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = practice.FirebaseLED.LightIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8580492D24C9EA92008CDD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -511,6 +771,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05912F95954092F0C8122C82 /* Pods-FirebaseLED.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FirebaseLED/FirebaseLED.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +792,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F56088436FBF0EDDF73C489 /* Pods-FirebaseLED.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FirebaseLED/FirebaseLED.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,6 +856,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		857150E625360A1F00C2B128 /* Build configuration list for PBXNativeTarget "LightIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857150E725360A1F00C2B128 /* Debug */,
+				857150E825360A1F00C2B128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		857150E925360A1F00C2B128 /* Build configuration list for PBXNativeTarget "LightIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				857150EA25360A1F00C2B128 /* Debug */,
+				857150EB25360A1F00C2B128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8580490824C9EA8A008CDD7C /* Build configuration list for PBXProject "FirebaseLED" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
