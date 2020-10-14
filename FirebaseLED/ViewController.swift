@@ -8,6 +8,8 @@
 
 import UIKit
 import FirebaseDatabase
+import Intents
+
 
 class ViewController: UIViewController {
     
@@ -25,21 +27,22 @@ class ViewController: UIViewController {
     /// changes title on button and then sends int to firebase RTDB
     @objc func onOrOff(){
         //this listens to status in RTDB and the data is ANY
-//        re.observe(.value) { (snap: DataSnapshot) in
-//            //print(snap.value!)
-//            let data = "\(snap.value!)"
-//            if data == "true" {
-//                self.button.setTitle("ON", for: .normal)
-//
-//            }
-//            else {
-//                self.button.setTitle("OFF", for: .normal)
-//            }
-//
-//        }
+        //        re.observe(.value) { (snap: DataSnapshot) in
+        //            //print(snap.value!)
+        //            let data = "\(snap.value!)"
+        //            if data == "true" {
+        //                self.button.setTitle("ON", for: .normal)
+        //
+        //            }
+        //            else {
+        //                self.button.setTitle("OFF", for: .normal)
+        //            }
+        //
+        //        }
         if button.titleLabel?.text == "ON" {
             button.setTitle("OFF", for: .normal)
             re.setValue(0)
+            
         }
         else if button.titleLabel?.text == "OFF"{
             button.setTitle("ON", for: .normal)
@@ -48,6 +51,24 @@ class ViewController: UIViewController {
         
     }
     
+    //handle interaction of app with siri
+    func donateInteraction(){
+        let intent = LightSwitchIntent()
+        intent.suggestedInvocationPhrase = "On"
+        intent.suggestedInvocationPhrase = "Off"
+        
+        let interaction = INInteraction(intent: intent, response: nil)
+        
+        interaction.donate { (error) in
+            if error != nil {
+                if let error = error as NSError? {
+                    os_log("Interaction donation failed: %@", log: OSLog.default, type: .error, error)
+                } else {
+                    os_log("Successfully donated interaction")
+                }
+            }
+        }
+    }
     
     
     func setupConstraints(){
@@ -62,13 +83,13 @@ class ViewController: UIViewController {
         ])
         
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.5807225108, green: 0.066734083, blue: 0, alpha: 1)
         setupConstraints()
         // Do any additional setup after loading the view.
     }
-
+    
 }
 

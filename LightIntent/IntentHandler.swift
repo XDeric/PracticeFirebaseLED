@@ -16,7 +16,7 @@ class IntentHandler: INExtension{
             fatalError().localizedDescription
         }
         
-        return LightSwitchIntentHandling.self
+        return LightSwitchIntentHandler()
     }
 }
 

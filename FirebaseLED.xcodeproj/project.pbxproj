@@ -17,6 +17,11 @@
 		857150F025360ACB00C2B128 /* IntentDef.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */; };
 		857150F125360CC900C2B128 /* IntentDef.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */; };
 		857150F225360CC900C2B128 /* IntentDef.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */; };
+		857150F425360FE100C2B128 /* LightSwitchIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857150F325360FE100C2B128 /* LightSwitchIntentHandler.swift */; };
+		857150F5253611DC00C2B128 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580494024DBCAFB008CDD7C /* Status.swift */; };
+		857150F6253611DD00C2B128 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580494024DBCAFB008CDD7C /* Status.swift */; };
+		857150F7253611FB00C2B128 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491424C9EA8A008CDD7C /* ViewController.swift */; };
+		857150F8253611FC00C2B128 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491424C9EA8A008CDD7C /* ViewController.swift */; };
 		8580491124C9EA8A008CDD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491024C9EA8A008CDD7C /* AppDelegate.swift */; };
 		8580491324C9EA8A008CDD7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491224C9EA8A008CDD7C /* SceneDelegate.swift */; };
 		8580491524C9EA8A008CDD7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8580491424C9EA8A008CDD7C /* ViewController.swift */; };
@@ -87,6 +92,7 @@
 		857150DD25360A1F00C2B128 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		857150DF25360A1F00C2B128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = IntentDef.intentdefinition; sourceTree = "<group>"; };
+		857150F325360FE100C2B128 /* LightSwitchIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSwitchIntentHandler.swift; sourceTree = "<group>"; };
 		8580490D24C9EA8A008CDD7C /* FirebaseLED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLED.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8580491024C9EA8A008CDD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8580491224C9EA8A008CDD7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				8580494024DBCAFB008CDD7C /* Status.swift */,
+				857150F325360FE100C2B128 /* LightSwitchIntentHandler.swift */,
 				857150EF25360ACB00C2B128 /* IntentDef.intentdefinition */,
 			);
 			path = Model;
@@ -493,6 +500,8 @@
 			files = (
 				857150F125360CC900C2B128 /* IntentDef.intentdefinition in Sources */,
 				857150D025360A1F00C2B128 /* IntentHandler.swift in Sources */,
+				857150F7253611FB00C2B128 /* ViewController.swift in Sources */,
+				857150F5253611DC00C2B128 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +511,8 @@
 			files = (
 				857150F225360CC900C2B128 /* IntentDef.intentdefinition in Sources */,
 				857150DB25360A1F00C2B128 /* IntentViewController.swift in Sources */,
+				857150F8253611FC00C2B128 /* ViewController.swift in Sources */,
+				857150F6253611DD00C2B128 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +523,7 @@
 				8580491524C9EA8A008CDD7C /* ViewController.swift in Sources */,
 				8580493824C9F23B008CDD7C /* Secrets.swift in Sources */,
 				8580494124DBCAFB008CDD7C /* Status.swift in Sources */,
+				857150F425360FE100C2B128 /* LightSwitchIntentHandler.swift in Sources */,
 				8580491124C9EA8A008CDD7C /* AppDelegate.swift in Sources */,
 				857150F025360ACB00C2B128 /* IntentDef.intentdefinition in Sources */,
 				8580491B24C9EA8A008CDD7C /* FirebaseLED.xcdatamodeld in Sources */,

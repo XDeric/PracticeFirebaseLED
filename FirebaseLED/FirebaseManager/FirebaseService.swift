@@ -27,6 +27,5 @@ class FirebaseService {
     }
     
     func recieveStatus(){
-        
     }
 }

@@ -14,5 +14,5 @@ class DatabaseService: DatabaseReference {
     static let manager = DatabaseService()
     
     var refer = Database.database().reference().child("Status")
-
+    
 }
