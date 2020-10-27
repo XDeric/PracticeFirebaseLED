@@ -1,0 +1,23 @@
+{
+  "configurations" : [
+    {
+      "id" : "FE42A848-12D8-42A5-B231-563A03ECA55F",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FirebaseLED.xcodeproj",
+      "identifier" : "8580490C24C9EA8A008CDD7C",
+      "name" : "FirebaseLED"
+    }
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
