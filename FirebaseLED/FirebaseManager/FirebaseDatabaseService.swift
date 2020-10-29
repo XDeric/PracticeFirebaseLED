@@ -15,4 +15,8 @@ class DatabaseService: DatabaseReference {
     
     var refer = Database.database().reference().child("Status")
     
+    var test = Database.database().reference().child("Status").observe(DataEventType.value, with: { (snap) in
+        print(snap)
+    })
+    
 }

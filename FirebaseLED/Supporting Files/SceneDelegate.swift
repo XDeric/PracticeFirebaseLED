@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = ViewControllers()
         window?.makeKeyAndVisible()
         /*
          let masterTabBarConroller = UITabBarController()         masterTabBarConroller.viewControllers = [RadioStationsViewController(), PodcastsViewController()] //        radioVC = MediaPlayingViewController() //        radioVC?.player = player         window?.rootViewController = masterTabBarConroller

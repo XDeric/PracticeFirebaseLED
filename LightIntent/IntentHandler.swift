@@ -11,13 +11,13 @@ import Intents
 
 class IntentHandler: INExtension{
     
-    override func handler(for intent: INIntent) -> Any {
-        guard intent is LightSwitchIntent else {
-            fatalError().localizedDescription
-        }
-        
-        return LightSwitchIntentHandler()
-    }
+//    override func handler(for intent: INIntent) -> Any {
+//        guard intent is LightSwitchIntent else {
+//            print(fatalError().localizedDescription)
+//        }
+//
+//        return LightSwitchIntentHandler()
+//    }
 }
 
 

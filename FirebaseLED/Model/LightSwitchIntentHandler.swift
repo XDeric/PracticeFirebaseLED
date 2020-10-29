@@ -11,7 +11,7 @@ import Foundation
 class LightSwitchIntentHandler: NSObject, LightSwitchIntentHandling {
     
     func confirm(intent: LightSwitchIntent, completion: @escaping (LightSwitchIntentResponse) -> Void) {
-        let viewCont = ViewController()
+        let viewCont = ViewControllers()
         
         //So here I am accesing re(RTDB reference) looking at the value(Int) to see if its on or not
         viewCont.re.observeSingleEvent(of: .value, with: { (snapshot) in
@@ -32,7 +32,7 @@ class LightSwitchIntentHandler: NSObject, LightSwitchIntentHandling {
     }
     
     func handle(intent: LightSwitchIntent, completion: @escaping (LightSwitchIntentResponse) -> Void) {
-        let viewCont = ViewController()
+        let viewCont = ViewControllers()
         
         viewCont.re.observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? Int
