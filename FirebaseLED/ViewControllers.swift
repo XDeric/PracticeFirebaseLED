@@ -16,12 +16,14 @@ class ViewControllers: UIViewController {
     
     let re = DatabaseService.manager.refer
     
+    
     lazy var button: UIButton = {
         let btn = UIButton()
         btn.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
         btn.backgroundColor = #colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)
         btn.addTarget(self, action: #selector(onOrOff), for: .touchUpInside)
         btn.setTitle("OFF", for: .normal)
+        btn.accessibilityIdentifier = "deleteButton"
         return btn
     }()
     
@@ -43,7 +45,6 @@ class ViewControllers: UIViewController {
         if button.titleLabel?.text == "ON" {
             button.setTitle("OFF", for: .normal)
             re.setValue(0)
-            
         }
         else if button.titleLabel?.text == "OFF"{
             button.setTitle("ON", for: .normal)

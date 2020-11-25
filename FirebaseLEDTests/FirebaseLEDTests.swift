@@ -16,6 +16,24 @@ class FirebaseLEDTests: XCTestCase {
         print(dService)
         //XCTAssertEqual(<#T##expression1: Equatable##Equatable#>, <#T##expression2: Equatable##Equatable#>)
     }
+    
+    var app: XCUIApplication?
+    
+    func testUI(){
+        let app = XCUIApplication()
+        app.launch()
+//        wait(for: [], timeout: 10)
+        let deleteButton = app.buttons["deleteButton"]
+        XCTAssert(deleteButton.waitForExistence(timeout: 10))
+        deleteButton.tap()
+    }
+    
+    // app code
+    
+
+    // test code
+//    let app = XCUIApplication()
+//    let deleteButton = app.buttons["deleteButton"]
 
 //    override func setUp() {
 //        // Put setup code here. This method is called before the invocation of each test method in the class.
